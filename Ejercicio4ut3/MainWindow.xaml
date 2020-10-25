@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Visor de imagenes" Height="580" Width="750"
         MinHeight="580"
-        MinWidth="750"
+        MinWidth="750" 
         Icon="gallery.ico">
     <DockPanel LastChildFill="True">
         <DockPanel LastChildFill="True"
