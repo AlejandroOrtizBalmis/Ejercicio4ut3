@@ -1,0 +1,98 @@
+﻿<Window x:Class="Ejercicio4ut3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio4ut3"
+        mc:Ignorable="d"
+        Title="Visor de imagenes" Height="580" Width="750"
+        MinHeight="580"
+        MinWidth="750"
+        Icon="gallery.ico">
+    <DockPanel LastChildFill="True">
+        <DockPanel LastChildFill="True"
+                   DockPanel.Dock="Bottom"
+                   Margin="10px"
+                   Background="LightBlue"
+                   >
+            <TextBlock 
+                        DockPanel.Dock="Left"
+                        Text="Nº de imagenes : 10"
+                        FontFamily="Rubik"
+                        FontSize="20" 
+                        Margin="5,15"/>
+            <TextBlock DockPanel.Dock="Right"
+                       Text="Diseñado por Alejandro Ortiz"
+                       FontFamily="Rubik"
+                       FontSize="20"
+                       Margin="5,15" />
+            <TextBlock />
+
+
+        </DockPanel>
+
+        <Border DockPanel.Dock="Right"
+                BorderThickness="3"
+                BorderBrush="Black"
+                CornerRadius="3"
+                Margin="10">
+            <DockPanel LastChildFill="True"
+                       Background="LightGreen"
+                       Width="125">
+                <StackPanel Orientation="Vertical"
+                            DockPanel.Dock="Top">
+                    <Button Content="Añadir imagen"
+                            Margin="5" />
+                    <Button Content="Eliminar imagen"
+                            Margin="5" />
+                    <Button Content="Eliminar todas"
+                            Margin="5" />
+
+                </StackPanel>
+                <StackPanel Orientation="Vertical"
+                            DockPanel.Dock="Bottom">
+                    <Button Content="Rotar"
+                            Margin="5" />
+                    <Button Content="Recortar"
+                            Margin="5" />
+
+                </StackPanel>
+                <TextBlock />
+
+
+            </DockPanel>
+        </Border>
+        <TextBlock  DockPanel.Dock="Top"
+                    Text="Visor de imagenes"
+                    FontFamily="Rubik"
+                    FontSize="40" 
+                    HorizontalAlignment="Center"/>
+        <WrapPanel>
+            <Image Source="episodioIV.jpg"
+                   Height="200"
+                   Margin="5"/>
+            <Image Source="episodioIV.jpg"
+                   Height="200"
+                   Margin="5" />
+            <Image Source="episodioIV.jpg"
+                   Height="200"
+                   Margin="5" />
+            <Image Source="episodioIV.jpg"
+                   Height="200"
+                   Margin="5" />
+            <Image Source="episodioIV.jpg"
+                   Height="200"
+                   Margin="5" />
+            <Image Source="episodioIV.jpg"
+                   Height="200"
+                   Margin="5" />
+            <Image Source="episodioIV.jpg"
+                   Height="200"
+                   Margin="5" />
+            <Image Source="episodioIV.jpg"
+                   Height="200"
+                   Margin="5" />
+        </WrapPanel>
+
+    </DockPanel>
+</Window>
