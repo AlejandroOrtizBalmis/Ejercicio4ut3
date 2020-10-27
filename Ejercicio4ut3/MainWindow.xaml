@@ -9,6 +9,18 @@
         MinHeight="580"
         MinWidth="750" 
         Icon="gallery.ico">
+    <Window.Resources>
+    <Style TargetType="Image">
+        <Setter Property="Margin"
+                Value="5" />
+        <Setter Property="Height"
+                Value="200" />
+        <Setter Property="Source"
+                Value="episodioIV.jpg" />
+
+    </Style>
+    </Window.Resources>
+    
     <DockPanel LastChildFill="True">
         <DockPanel LastChildFill="False"
                    DockPanel.Dock="Bottom"
@@ -66,30 +78,14 @@
                     FontSize="40" 
                     HorizontalAlignment="Center"/>
         <WrapPanel>
-            <Image Source="episodioIV.jpg"
-                   Height="200"
-                   Margin="5"/>
-            <Image Source="episodioIV.jpg"
-                   Height="200"
-                   Margin="5" />
-            <Image Source="episodioIV.jpg"
-                   Height="200"
-                   Margin="5" />
-            <Image Source="episodioIV.jpg"
-                   Height="200"
-                   Margin="5" />
-            <Image Source="episodioIV.jpg"
-                   Height="200"
-                   Margin="5" />
-            <Image Source="episodioIV.jpg"
-                   Height="200"
-                   Margin="5" />
-            <Image Source="episodioIV.jpg"
-                   Height="200"
-                   Margin="5" />
-            <Image Source="episodioIV.jpg"
-                   Height="200"
-                   Margin="5" />
+            <Image />
+            <Image />
+            <Image />
+            <Image />
+            <Image />
+            <Image />
+            <Image />
+            <Image />
         </WrapPanel>
 
     </DockPanel>
