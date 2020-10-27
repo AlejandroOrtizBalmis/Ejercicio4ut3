@@ -10,7 +10,7 @@
         MinWidth="750" 
         Icon="gallery.ico">
     <DockPanel LastChildFill="True">
-        <DockPanel LastChildFill="True"
+        <DockPanel LastChildFill="False"
                    DockPanel.Dock="Bottom"
                    Margin="10px"
                    Background="LightBlue"
@@ -26,7 +26,6 @@
                        FontFamily="Rubik"
                        FontSize="20"
                        Margin="5,15" />
-            <TextBlock />
 
 
         </DockPanel>
@@ -36,7 +35,7 @@
                 BorderBrush="Black"
                 CornerRadius="3"
                 Margin="10">
-            <DockPanel LastChildFill="True"
+            <DockPanel LastChildFill="False"
                        Background="LightGreen"
                        Width="125">
                 <StackPanel Orientation="Vertical"
@@ -57,7 +56,6 @@
                             Margin="5" />
 
                 </StackPanel>
-                <TextBlock />
 
 
             </DockPanel>
