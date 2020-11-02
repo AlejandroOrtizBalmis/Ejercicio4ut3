@@ -5,43 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ejercicio4ut3"
         mc:Ignorable="d"
-        Title="Visor de imagenes" Height="580" Width="750"
+        Title="Visor de imagenes"
+        Height="580"
+        Width="750"
         MinHeight="580"
-        MinWidth="750" 
+        MinWidth="750"
         Icon="gallery.ico">
     <Window.Resources>
-    <Style TargetType="Image">
-        <Setter Property="Margin"
-                Value="5" />
-        <Setter Property="Height"
-                Value="200" />
-        <Setter Property="Source"
-                Value="episodioIV.jpg" />
+        <Style TargetType="Image">
+            <Setter Property="Margin"
+                    Value="5" />
+            <Setter Property="Height"
+                    Value="200" />
+            <Setter Property="Source"
+                    Value="episodioIV.jpg" />
 
-    </Style>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily"
+                    Value="Rubik" />
+        </Style>
+        <Style TargetType="TextBlock"
+               x:Key="textBlockBottom"
+               BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="FontSize"
+                    Value="20" />
+            <Setter Property="Margin"
+                    Value="5.15" />
+
+        </Style>
         <Style TargetType="Button">
             <Setter Property="Margin"
                     Value="5" />
         </Style>
     </Window.Resources>
-    
+
     <DockPanel LastChildFill="True">
         <DockPanel LastChildFill="False"
                    DockPanel.Dock="Bottom"
                    Margin="10px"
-                   Background="LightBlue"
-                   >
-            <TextBlock 
-                        DockPanel.Dock="Left"
-                        Text="Nº de imagenes : 10"
-                        FontFamily="Rubik"
-                        FontSize="20" 
-                        Margin="5,15"/>
+                   Background="LightBlue">
+            <TextBlock DockPanel.Dock="Left"
+                       Text="Nº de imagenes : 10"
+                       Style="{StaticResource textBlockBottom}"/>
             <TextBlock DockPanel.Dock="Right"
                        Text="Diseñado por Alejandro Ortiz"
-                       FontFamily="Rubik"
-                       FontSize="20"
-                       Margin="5,15" />
+                       Style="{StaticResource textBlockBottom}"/>
 
 
         </DockPanel>
@@ -63,8 +72,8 @@
                 </StackPanel>
                 <StackPanel Orientation="Vertical"
                             DockPanel.Dock="Bottom">
-                    <Button Content="Rotar"/>
-                    <Button Content="Recortar"/>
+                    <Button Content="Rotar" />
+                    <Button Content="Recortar" />
 
                 </StackPanel>
 
@@ -73,9 +82,8 @@
         </Border>
         <TextBlock  DockPanel.Dock="Top"
                     Text="Visor de imagenes"
-                    FontFamily="Rubik"
-                    FontSize="40" 
-                    HorizontalAlignment="Center"/>
+                    FontSize="40"
+                    HorizontalAlignment="Center" />
         <WrapPanel>
             <Image />
             <Image />
